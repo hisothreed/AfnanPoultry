@@ -2,7 +2,7 @@
   <div id="app">
     <el-row>
       <el-col :span="24">
-        <header-comp></header-comp>
+        <header-comp class="header"></header-comp>
       </el-col>
     </el-row>
     <el-row>
@@ -26,6 +26,10 @@ export default {
 <style>
 .routerView {
   width: 100%;
+  margin-top:100px;
+}
+.header {
+  max-width: 900px;
 }
 #app {
   min-width: 340px;

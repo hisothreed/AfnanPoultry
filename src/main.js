@@ -8,6 +8,7 @@ import 'element-ui/lib/theme-default/index.css'
 import Buefy from 'buefy'
 import 'buefy/lib/buefy.css'
 import Vulma from 'vulma'
+import Vuetify from 'vuetify'
 
 
 Vue.config.productionTip = false
@@ -15,6 +16,7 @@ Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(Buefy)
 Vue.use(Vulma)
+Vue.use(Vuetify)
 
 
 

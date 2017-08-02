@@ -98,9 +98,14 @@ export default {
 
 }
 @media (min-width:900px) {
+  #headerContainer {
+    margin: auto;
+    max-width: 1400px;
+  }
   #headerContainer >>> .nav {
     min-height: 100px;
-    width: 100%;
+    max-width: 1400px;
+    margin: auto;
     height:100px;
     z-index :999;
   }
