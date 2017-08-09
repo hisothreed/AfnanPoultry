@@ -1,13 +1,13 @@
 <template>
   <div id="headerContainer">
-    <vulma-navbar style=""  @menu-clicked='menuClicked'>
-      <vulma-navitem  slot='left' :is-tab='false' class='is-hidden-desktop is-hidden-tablet menuIcon'>
+    <vulma-navbar @menu-clicked='menuClicked'>
+      <vulma-navitem slot='left' :is-tab='false' class='is-hidden-desktop is-hidden-tablet menuIcon'>
         <div >
           <i @click="$refs.drawer.open()" class="fa fa-bars" aria-hidden="true"></i>
         </div>
       </vulma-navitem>
       <vulma-navitem slot='left' :is-tab='false'>
-        <div id="logo"><img src="../assets/afLogo.png" height="90" width="90"></div>
+        <div id="logo"><img src="../assets/afLogo.png" height="50" width="90"></div>
       </vulma-navitem>
       <!-- DESKTOP MENU -->
       <vulma-navitem slot='right' :is-tab='false' class='is-hidden-mobile'>
@@ -65,9 +65,6 @@ export default {
 }
 </script>
 <style scoped>
-#headerContainer >>> .nav .fixed{
-
-}
 #headerContainer >>> .fa-bars{
   font-size:20px;
   color: white;
@@ -76,7 +73,7 @@ export default {
   border-bottom: none;
 }
 #headerContainer >>> .nav-item img {
-  max-height: 100px;
+  max-height: 80px;
 }
 #headerContainer >>> .nav-item {
   padding-top: 0;
@@ -103,10 +100,10 @@ export default {
     max-width: 1400px;
   }
   #headerContainer >>> .nav {
-    min-height: 100px;
+    min-height: 50px;
     max-width: 1400px;
     margin: auto;
-    height:100px;
+    height:80px;
     z-index :999;
   }
   #headerContainer >>> .navbar-link:hover {
